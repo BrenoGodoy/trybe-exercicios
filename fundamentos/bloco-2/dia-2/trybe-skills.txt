@@ -5,3 +5,4 @@ O que eu vou aprender na Trybe:
 - Git
 - Html
 - Css
+- JavaScript
