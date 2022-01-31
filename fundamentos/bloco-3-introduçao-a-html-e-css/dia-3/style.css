@@ -1,24 +1,17 @@
-.super-mario {
-    width: 200px;
-    right: 50px;
+ol {
+  background-color: yellow;
+}
+
+ol li.par {
+  background-color: green;
+} 
+
+ol li.impar {
+  text-transform: uppercase;
+}
+
+  h1, h2, h3 {
+    color: red;
   }
+
   
-  .goomba {
-    width: 100px;
-       
-  }
-  
-  .baloon{
-      float: left; 
-  }
-  
-  .speach {
-    font-size: 25px;
-    position: absolute;
-    left:30px;
-    top: 590px;
-  }
-  
-  .bowser {
-    width: 200px;
-  }
