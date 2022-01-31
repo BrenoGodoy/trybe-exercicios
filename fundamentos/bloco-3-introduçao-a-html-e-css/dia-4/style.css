@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     background-color: rgb(203, 255, 124);
+
 }
 
 
@@ -9,15 +10,11 @@ header {
     background-color: darkgreen;
 }
 
-h1 {
-    margin: 0px;
+section.title h1{
+   font-size: 50px;
+    margin: auto;
     margin-left: 14px;
     color: white;
-}
-
-.fatos {
-    width: auto;
-    margin: 7px;
 }
 
 a {
@@ -41,5 +38,21 @@ a:hover {
     font-size: xx-large;
     padding-bottom: 20px;
     background-color: darkgreen;
+}
+
+.fatos {
+    margin: 7px;
+}
+
+.fatos h1 {
+    font-size: 3em;
+}
+
+section.fatos p {
+    font-size: 18px;
+}
+
+section.fatos h2 {
+    font-size: 2em;
 }
 
