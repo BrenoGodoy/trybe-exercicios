@@ -1,0 +1,17 @@
+ol {
+  background-color: yellow;
+}
+
+ol li.par {
+  background-color: green;
+} 
+
+ol li.impar {
+  text-transform: uppercase;
+}
+
+  h1, h2, h3 {
+    color: red;
+  }
+
+  
