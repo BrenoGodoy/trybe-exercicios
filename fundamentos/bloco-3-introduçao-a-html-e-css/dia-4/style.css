@@ -1,25 +1,58 @@
 body {
-    margin: 0;
+    margin: 0px;
     background-color: rgb(203, 255, 124);
+
 }
 
-article p {
-    width: auto;
+
+header {
+    margin: 0px;
+    background-color: darkgreen;
+}
+
+section.title h1{
+   font-size: 50px;
+    margin: auto;
+    margin-left: 14px;
+    color: white;
 }
 
 a {
     text-decoration: none;
     margin: 15px;
     color: white;
-    margin-left: 0;
+}
+
+#botao-main-page {
+    margin-left: 10px;
+}
+
+a:hover {
+    color: rgb(203, 255, 124);
 }
 
 .nav-links {
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
+    margin-top: 0px;
     height: 20px;
     font-size: xx-large;
-    padding: 30px;
+    padding-bottom: 20px;
     background-color: darkgreen;
+}
+
+.fatos {
+    margin: 7px;
+}
+
+.fatos h1 {
+    font-size: 3em;
+}
+
+section.fatos p {
+    font-size: 18px;
+}
+
+section.fatos h2 {
+    font-size: 2em;
 }
 
