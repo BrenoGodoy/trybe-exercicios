@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+        const paragraph = document.getElementsByTagName("p");
+
+        paragraph[0].innerText = "Se tudo der certo me vejo um desesnvolvedor brabo por aí nesse mundo :).";
+
+        const main = document.getElementsByClassName("main-content");
+
+        main[0].style.backgroundColor = "rgb(76,164,109)";
+
+        const centerContent = document.getElementsByClassName("center-content");
+
+        centerContent[0].style.backgroundColor = "white";
+
+        let titleRepair = document.getElementsByClassName("title");
+
+        titleRepair[0].innerText = "exercício 5.1 - JavaScript";
+
+        for (let i in paragraph) {
+            console.log(paragraph[i]);
+        }
+
+    </script>
+  </body>
+</html>
