@@ -1,0 +1,16 @@
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(151, 255, 151);
+    text-align: center;
+    height: 70px;
+}
+
+#title {
+    position: relative;
+    top: 15px;
+    right: 25px;
+    margin: 0px;
+}
