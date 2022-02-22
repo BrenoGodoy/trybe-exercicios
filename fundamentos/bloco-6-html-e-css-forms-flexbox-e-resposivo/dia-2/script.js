@@ -1,0 +1,1 @@
+let data = document.getElementById("data").DatePickerX.init();
