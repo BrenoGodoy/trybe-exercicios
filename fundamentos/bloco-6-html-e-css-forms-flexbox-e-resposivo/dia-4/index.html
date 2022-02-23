@@ -3,32 +3,49 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS FLEXBOX - ALIGN SELF</title>
+    <title>CSS FLEXBOX - ORDER</title>
     <style>
       .container {
-        border: 1px solid black;
         display: flex;
-        height: 300px;
+        height: 50px;
         margin: auto;
-        width: 500px;
+        width: 100%;
       }
 
-      .keep {
-        align-self: center;
-        background-color: #FAA488;
+      .box {
+        align-items: center;
         display: flex;
         justify-content: center;
-        width: 150px;
+      }
+
+      .one {
+        background-color: #FBD26A;
+        display: flex;
+        order: 1;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 300px;
         list-style: none;
       }
 
-      .change {
-        /* Alterada a propriedade align-self. */
-        align-self: center;
-        background-color: #FBD26A;
+      .two {
+        background-color: #FAA488;
         display: flex;
-        justify-content: center;
-        width: 200px;
+        flex-grow: 1;
+        list-style: none;
+      }
+
+      .three {
+        background-color: #9069EF;
+        display: flex;
+        flex-grow: 1;
+        list-style: none;
+      }
+
+      .four {
+        background-color: #006472;
+        display: flex;
+        flex-grow: 1;
         list-style: none;
       }
 
@@ -36,9 +53,10 @@
   </head>
   <body>
     <ul class="container">
-      <li class="keep">REFERÊNCIA</li>
-      <li class="change">ELEMENTO TESTE</li>
-      <li class="keep">REFERÊNCIA</li>
+      <li class="box one">1</li>
+      <li class="box two">2</li>
+      <li class="box three">3</li>
+      <li class="box four">4</li>
     </ul>
   </body>
 </html>
