@@ -15,7 +15,7 @@ html {
     }
 
     li {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     h1 {
@@ -29,5 +29,30 @@ html {
 
     footer {
         font-size: 18px;
+    }
+}
+
+@media screen and (min-width:493px) and (max-width:900px) {
+    body {
+        background-color: rgb(255, 253, 226);
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 100%;
+    }
+    
+    footer {
+        font-size: 13px;
     }
 }
