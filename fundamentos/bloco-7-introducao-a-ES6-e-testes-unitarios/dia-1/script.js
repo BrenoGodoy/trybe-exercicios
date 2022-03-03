@@ -1,10 +1,12 @@
-const nome = 'Breno'
+const testingScope = (escopo) => {
+  if (escopo === true) {
+    var ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
+    ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
+    console.log(ifScope);
+  } else {
+    var elseScope = 'Não devo ser utilizada fora meu escopo (else)';
+    console.log(elseScope);
+  }
+}
 
-// Com o template literals
-console.log(`Primeira linha; ${nome}
-Segunda linha;
-Terceira linha;`
-);
-
-// Sem o template literals:
-console.log('Primeira linha;\n' + 'Segunda linha;\n' + 'Terceira linha;\n');
+testingScope(true);
