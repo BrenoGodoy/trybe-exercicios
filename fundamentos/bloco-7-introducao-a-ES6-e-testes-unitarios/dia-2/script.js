@@ -1,27 +1,23 @@
 const person = {
-  name: 'Alberto',
-  lastName: 'Gomes',
-  age: 20,
+  name: 'Roberto',
 };
 
-const info = {
+const lastName = {
+  lastName: 'Silva',
+};
+
+const test = {
+  name: 'maria',
   age: 23,
-  job: 'engenheiro',
-};
+}
 
-const family = {
-  children: ['Maria', 'João'],
-  wife: 'Ana',
-};
+const clone = Object.assign(person, lastName);
 
-Object.assign(person, info, family)
-console.log(person)
+console.log(clone); // { name: 'Roberto', lastName: 'Silva' }
+console.log(person); // { name: 'Roberto', lastName: 'Silva' }
 
-/* Output
-  { name: 'Alberto',
-  lastName: 'Gomes',
-  age: 23,
-  job: 'engenheiro',
-  children: [ 'Maria', 'João' ],
-  wife: 'Ana'
-  } */
+Object.assign(clone, test);
+
+console.log(clone);
+console.log(person);
+console.log(test);
