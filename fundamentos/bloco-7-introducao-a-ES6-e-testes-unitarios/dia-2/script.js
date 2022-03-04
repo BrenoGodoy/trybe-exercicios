@@ -1,12 +1,27 @@
-function criaObject (object, key, value) {
-  const newKey = key;
-  const newValue = value;
-  object[newKey] = newValue;
-  return object
+function show(object) {
+  const keys = Object.keys(object);
+  const values = Object.values(object);
+  let show = `Estudante:`
+  for (const index in keys) {
+    show =`${show} 
+    ${keys[index]} Nível: ${values[index]}`
+  }
+  return show;
 }
 
-const objectTest = {
-  nacionalidade: 'Brasileiro',
-}
+const student1 = {
+  Html: 'Muito Bom',
+  Css: 'Bom',
+  JavaScript: 'Ótimo',
+  SoftSkills: 'Ótimo',
+};
 
-console.log(criaObject(objectTest, 'name', 'Breno'));
+const student2 = {
+  Html: 'Bom',
+  Css: 'Ótimo',
+  JavaScript: 'Ruim',
+  SoftSkills: 'Ótimo',
+  Git: 'Bom', // chave adicionada
+};
+
+console.log(show(student1));
