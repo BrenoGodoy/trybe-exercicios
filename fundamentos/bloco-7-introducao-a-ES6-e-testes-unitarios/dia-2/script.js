@@ -1,14 +1,27 @@
-const países = {
-  França: 'Paris',
-  Brasil: 'Brasília',
-  Espanha: 'Madrid',
-  Portugal: 'Lisboa',
+const person = {
+  name: 'Alberto',
+  lastName: 'Gomes',
+  age: 20,
 };
-const pairKeyValue = Object.entries(países);
-console.log(pairKeyValue);
 
-for(index in pairKeyValue) {
-  console.log('--------');
-  console.log('País:', pairKeyValue[index][0]);
-  console.log('Capital:', pairKeyValue[index][1]);
+const info = {
+  age: 23,
+  job: 'engenheiro',
 };
+
+const family = {
+  children: ['Maria', 'João'],
+  wife: 'Ana',
+};
+
+Object.assign(person, info, family)
+console.log(person)
+
+/* Output
+  { name: 'Alberto',
+  lastName: 'Gomes',
+  age: 23,
+  job: 'engenheiro',
+  children: [ 'Maria', 'João' ],
+  wife: 'Ana'
+  } */
