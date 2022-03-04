@@ -1,13 +1,12 @@
-const customer = {
-  firstName: 'Roberto',
-  age: 22,
-  job: 'Teacher',
-};
+function criaObject (object, key, value) {
+  const newKey = key;
+  const newValue = value;
+  object[newKey] = newValue;
+  return object
+}
 
-let newKey = 'lastName';
-const lastName = 'Ferreira';
-customer[newKey] = lastName;
-newKey = 'fullName';
-const fullName = `${customer.firstName} ${customer.lastName}`;
-customer[newKey] = fullName;
-console.log(customer);
+const objectTest = {
+  nacionalidade: 'Brasileiro',
+}
+
+console.log(criaObject(objectTest, 'name', 'Breno'));
