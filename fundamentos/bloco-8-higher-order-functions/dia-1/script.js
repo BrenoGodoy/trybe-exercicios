@@ -1,19 +1,16 @@
-const newEmployees = (func) => {
-  const employees = {
-    id1: func('Pedro Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
-    id2: func('Luiza Drumond'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
-    id3: func('Carla Paiva'), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
-  }
-  return employees;
-};
-
-const criaPesssoa = (nome) => {
-  const email = `${nome}@gmail.com`;
-  const emailRefact = email.split(' ').join(''); //retira os espaços.
-  return {
-    nomeCompleto: `${nome}`,
-    email: emailRefact,
-  };
+const sorteio = (aposta, func) => {
+  const min = Math.ceil(1);
+  const max = Math.floor(5);
+  const resultado = Math.floor(Math.random() * (max - min)) + min;
+  return testaSorteio(aposta, resultado);
 }
 
-console.log(newEmployees(criaPesssoa));
+const testaSorteio = (number, resultado) => {
+  if (number === resultado) {
+    return 'parabéns você ganhou!!!!'
+  } else {
+      return 'Tente Novamente.'
+    }
+}
+
+console.log(sorteio(4, testaSorteio));
