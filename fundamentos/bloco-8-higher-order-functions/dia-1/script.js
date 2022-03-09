@@ -1,8 +1,9 @@
-const sum = (num1, num2) => num1 + num2;
-const sub = (num1, num2) => num1 - num2;
-const mult = (num1, num2) => num1 * num2;
-const div = (num1, num2) => num1 / num2;
+const acordando = () => 'acordando!!';
+const tomarCafe = () => 'Bora tomar café!!';
+const partiuDormir = () => 'Partiu dormir!!';
 
-const calculator = (func, num1, num2) => func(num1, num2);
+const doingThings = (func) => func();
 
-console.log(calculator(mult, 10, 15));
+console.log(doingThings(acordando));
+console.log(doingThings(tomarCafe));
+console.log(doingThings(partiuDormir));
