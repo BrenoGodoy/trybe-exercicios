@@ -1,16 +1,24 @@
-const sorteio = (aposta, func) => {
-  const min = Math.ceil(1);
-  const max = Math.floor(5);
-  const resultado = Math.floor(Math.random() * (max - min)) + min;
-  return testaSorteio(aposta, resultado);
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const corretorProva = (gabarito, verificar, func) => {
+  return func(gabarito,verificar);
 }
 
-const testaSorteio = (number, resultado) => {
-  if (number === resultado) {
-    return 'parabéns você ganhou!!!!'
-  } else {
-      return 'Tente Novamente.'
+const corretor = (prova, aluno) => {
+  let nota = 0;
+  for (let i in prova) {
+    if (aluno[i] === prova[i]) {
+      nota += 1;
+    } else if (aluno[i] === 'N.A') {
+        nota = nota;
+    } else if (aluno[i] !== prova[i]) {
+        nota -= 0.5;
+    } else {
+      return 'deu algum ruim hein'
     }
+  }
+  return nota;
 }
 
-console.log(sorteio(4, testaSorteio));
+console.log(corretorProva(RIGHT_ANSWERS, STUDENT_ANSWERS, corretor));
