@@ -1,8 +1,15 @@
-let numerosPares = [1, 3, 5, 6, 8, 10, 12];
+const getNationality = ({ firstName, nationality = 'Brazilian' }) => `${firstName} is ${nationality}`;
 
-// Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
+const person = {
+  firstName: 'João',
+  lastName: 'Jr II',
+};
 
-const [um, dois, tres, quatro, cinco, seis, sete] = numerosPares;
-numerosPares = [quatro, cinco, seis, sete];
+const otherPerson = {
+  firstName: 'Ivan',
+  lastName: 'Ivanovich',
+  nationality: 'Russian',
+};
 
-console.log(numerosPares); // [6, 8, 10, 12];
+console.log(getNationality(otherPerson)); // Ivan is Russian
+console.log(getNationality(person));
