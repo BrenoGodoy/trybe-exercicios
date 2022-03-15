@@ -1,19 +1,19 @@
-// definindo o objeto
-const character = {
-  name: 'Luke SkyWalker',
-  age: '53',
-  description: {
-    specieName: 'Human',
-    jedi: true,
-  },
-  homeWorld: {
-    name: 'Tatooine',
-    population: '200000',
-  },
+
+const user = {
+  name: 'Maria',
+  age: 21,
+  nationality: 'Brazilian',
 };
 
-// desestruturando o objeto:
-const { name, age, homeWorld: { name: planeta }, description: { jedi } } = character;
+const jobInfos = {
+  profession: 'Software engineer',
+  squad: 'Rocket Landing Logic',
+  squadInitials: 'RLL',
+};
 
-// imprimindo os valores:
-console.log(`Esse é o ${name}, ele tem ${age} anos, mora no planeta ${planeta} e, por incrível que possa parecer, ele ${jedi ? 'é um Jedi' : 'não é um Jedi'}.`);
+const {name, age, nationality} = user;
+const {profession, squad, squadInitials} = jobInfos;
+
+const fraseFinal = `Hi my name is ${name}, im ${age} years old and im ${nationality}. I work as a ${profession}, and my squad is ${squadInitials}-${squad}`;
+
+console.log(fraseFinal);
