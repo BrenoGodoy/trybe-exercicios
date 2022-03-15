@@ -1,19 +1,8 @@
+let numerosPares = [1, 3, 5, 6, 8, 10, 12];
 
-const user = {
-  name: 'Maria',
-  age: 21,
-  nationality: 'Brazilian',
-};
+// Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
 
-const jobInfos = {
-  profession: 'Software engineer',
-  squad: 'Rocket Landing Logic',
-  squadInitials: 'RLL',
-};
+const [um, dois, tres, quatro, cinco, seis, sete] = numerosPares;
+numerosPares = [quatro, cinco, seis, sete];
 
-const {name, age, nationality} = user;
-const {profession, squad, squadInitials} = jobInfos;
-
-const fraseFinal = `Hi my name is ${name}, im ${age} years old and im ${nationality}. I work as a ${profession}, and my squad is ${squadInitials}-${squad}`;
-
-console.log(fraseFinal);
+console.log(numerosPares); // [6, 8, 10, 12];
