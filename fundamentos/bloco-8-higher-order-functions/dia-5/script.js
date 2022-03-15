@@ -1,6 +1,6 @@
-const getPosition = (latitude, longitude) => ({
-  latitude,
-  longitude,
-});
+const multiply = (number, value = 1) => {
+  return number * value;
+};
 
-console.log(getPosition(-19.8157, -43.9542));
+console.log(multiply(8));
+console.log(multiply(8, 2));
