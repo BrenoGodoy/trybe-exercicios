@@ -1,6 +1,6 @@
 import React from "react";
 
-class MeClass extends React.Component() {
+class MeClass extends React.Component {
   render() {
     return (
       <div>
