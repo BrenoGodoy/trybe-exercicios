@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+}
+
+.fieldset1 {
+  display: flex;
+}
